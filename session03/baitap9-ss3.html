@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
     <form action="" method="post">
@@ -28,9 +34,31 @@
         <label for="sothich">Sở thích:</label>
         <input type="text" id="sothich" name="sothich" required>
         <br>
-        
-
-
+        <label for="kinang">Kĩ Năng: </label>
+        <textarea name="kinang" id="kinang"></textarea>
+        <br>
+        <label for="thoigianranh">Thời gian rảnh: </label>
+        <section>
+            <label> <input type="radio" name="thoigianranh" value="sang">sáng</label>
+            <label> <input type="radio" name="thoigianranh" value="chieu">trưa</label>
+            <label> <input type="radio" name="thoigianranh" value="toi">chiều</label>
+            <br>
+        <label for="lydothamgianhom">Lý do tham gia nhóm:  </label>
+        <textarea name="lydothamgianhom" id="lydothamgianhom"></textarea>
+        <br>
+        <label for="mauyeuthich">Màu yêu thích: </label>
+        <input type="color" > 
+        <br>
+        <label for="dangkynhanbangtin"> Đăng ký nhận bảng tin</label>
+        <input type="checkbox" name="dangkynhanbangtin" id="dangkynhanbangtin" value="dangkynhanbangtin">
+        <br>
+        <label for="nhanthongbaoquaemail">Nhận thông báo qua email: </label>
+        <section>
+            <label> <input type="radio" name="nhanthongbaoquaemail" value="email">Email</label>
+            <label> <input type="radio" name="nhanthongbaoquaemail" value="sms">SMS</label>
+        </section>
+        <br>
+        <button>Đăng kí thành viên</button>
 
 
 
