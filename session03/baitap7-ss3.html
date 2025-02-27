@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+
+
+
+    </style>    
+</head>
+<body>
+    <form action="" method="post">
+        <label for="name">Họ và tên: </label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="Email">Email: </label>
+        <input type="email" id="Email" name="Email" required><br>
+
+        <label for="ngaysinh">Ngày Sinh: </label>
+        <input type="date" id="ngaysinh" name="ngaysinh"required><br>
+
+        <label for="gioitinh">Giới tính </label>
+        <label> <input type="radio" name="gioitinh" value="nam">Nam</label>
+        <label> <input type="radio" name="gioitinh" value="Nữ">Nữ</label><br>
+
+        <label for="sodienthoai">Số điện thoại: </label>
+        <input placeholder="123-1234-1233" type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" required><br>
+    
+        <label for="chuyennganh">Chuyên Ngành:</label>
+        <input type="text" id="chuyennganh" name="chuyennganh" required><br>
+
+        <label for="diem">Điểm GPA</label>
+        <input type="number" id="diem" name="diem" required><br>
+         
+
+        <label for="diachi">Địa chỉ: </label>
+        <textarea name="diachi" id="diachi"></textarea><br>
+
+        <label for="lophoc">Lớp hhọc:</label>
+        <select name="lophoc" id="lophoc">
+            <option value="lop1">Lớp 1</option>
+            <option value="lop2">Lớp 2</option>
+        </select><br>
+
+        <label for="ngaydangkihoc">Ngày Đăng Ký Học:</label>
+        <input type="datetime-local" id="ngaydangkihoc" name="ngaydangkihoc" required><br>
+
+        <button>Gửi thông tin</button>
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
