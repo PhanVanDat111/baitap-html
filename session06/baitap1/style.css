@@ -1,0 +1,32 @@
+.title{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.tieude{
+word-spacing: 15px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+.body{
+    text-align: center;
+    display: flex;   
+}     
+.body img{
+    margin-left: 600px;
+}
+.body p{
+    padding: 20px;
+}
+.footer{
+    background-color:#f1f1f1;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+}
