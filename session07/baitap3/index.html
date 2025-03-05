@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Editor's Pick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            width: 400px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .tag {
+            display: inline-block;
+            
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .category {
+        
+            font-weight: bold;
+        }
+        .description {
+            color: #555;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="https://tineye.com/api/v1/query/6880c09d2bebad2e89b9df316f8db08f5767f20a?size=160" alt="" height="70px">
-        <h2>EDITOR'S PICK</h2>
-        <img src="https://tse1.mm.bing.net/th?id=OIP.oDQW3Yk-EPIT7Okg0Cw-aQHaJk&pid=Api&P=0&h=180" alt="">
-    </header>
-    <div class="container">
-        <h3>Khó cứu được Chị Đẹp Đạp Gió 2024</h3>
-        <h5>Musik</h5>
-        <p>Quy tụ dàn nghệ sĩ nổi tiếng như Ngọc Ánh, Minh Tuyết, Phương Thanh, Tóc Tiên, Minh Hằng... Chị Đẹp Đạp Gió 2024 không có sức hút, gần như hụt hơi trước các anh trai và loạt sự kiện giải trí khác.</p>
+    <div class="card">
+        <img src="https://antimatter.vn/wp-content/uploads/2022/07/hinh-anh-hoat-hinh-3d-de-thuong.jpg" alt="" height="50px">
+        <div class="card-content">
+            <span class="tag">EDITOR'S PICK</span>
+            <h2 class="title">Khó cứu được Chị Đẹp Đạp Gió 2024</h2>
+            <p class="category">Musik</p>
+            <p class="description">Quy tụ dàn nghệ sĩ nổi tiếng như Ngọc Ánh, Minh Tuyết, Phương Thanh, Tóc Tiên, Minh Hằng... Chị Đẹp Đạp Gió 2024 không có sức hút, gần như hụt hơi trước các anh trai và loạt sự kiện giải trí khác.</p>
+        </div>
     </div>
 </body>
-</html 
+</html>

@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.card-content{
+    padding: 15px;
+    background-color: rgb(219, 212, 212);
+}
+.overlay h2 {
+    position: absolute;
+    bottom: 150px;
+    left: 530px;
+   max-width: 350px;
+   color: white;
+}
+.sub-text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.tag {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.tag::before {
+    content: "";
+    width: 5px;
+    height: 15px;
+    background: orange;
+    margin-right: 8px;
+}
