@@ -1,0 +1,86 @@
+body{
+    background-color:red;
+}
+@keyframes move 
+{
+ 0% {
+    transform : translatex(0px) rotate(0deg)
+ }
+ 5% {
+    transform : translatex(50px) rotate(60deg) 
+10% {
+        transform : translatex(100px) rotate(120deg)
+    }
+15% {
+        transform : translatex(150px) rotate(180deg) 
+    }
+20% {
+    transfrom : translatex*(151px); rotate(180deg)
+
+}
+25% {
+    transform : translatex(150px) rotate(180deg)
+
+}
+30% {
+    transform : translatey(100px) rotate(120deg) 
+35% {
+    transform : translatey(50px) rotate(60deg) 
+}
+40% {
+    transform : translatey(0px) rotate(0deg) 
+}
+45% {
+    transform : translatey(-50px) rotate(-60deg) 
+}
+50% {
+    transform : translatex(-100px) rotate(-120deg)
+}
+55% {
+    transform : translatex(-150px) rotate(-180deg);  
+}
+60% {
+    transform : translatex(-151px) rotate(-180deg) 
+}
+65% {
+    transform : translatex(-150px) rotate(-180deg)
+}
+70% {
+    transform : translatey(-100px) rotate(-120deg) 
+}
+75% {
+    transform : translatex(-50px) rotate(-60deg) scale(1.5);
+}
+80% {
+    transform : translatex(0px) rotate(0deg) scale(1);
+}
+85% {
+    transform : translatex(50px) rotate(60deg) scale(1.5);
+}
+90% {
+    transform : translatex(100px) rotate(120deg) scale(2);
+
+}
+95% {
+    transform : translatex(150px) rotate(180deg) scale(2.5);
+}
+100% {
+    transform : translatex(151px) rotate(180deg) scale(2.5);
+}
+}
+
+
+
+
+
+
+
+
+
+
+ .box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation: move 2s infinite;}
