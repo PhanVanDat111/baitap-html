@@ -1,0 +1,46 @@
+
+body{
+    text-align: center;
+}
+.plan-container{
+    background-color: white;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.plan-header{
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.highlight{
+    color: orange;
+}
+.footer{
+    padding: 10px 10px; 
+}
+.button1{
+    background-color: red;
+    color: white;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.button2{
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.icon{
+    position: absolute;
+    top: 5px;
+    left: 270px;
+}
