@@ -1,0 +1,21 @@
+.blog-card{
+    text-align: center;
+    max-width: 400px;
+
+}
+.btn-custom{
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 10px;   
+    margin-bottom: 20px;
+}
+.blog-card p{
+    font-family:'Courier New', Courier, monospace ;
+}
+td{
+    border: 1px solid white; 
+}
+td:last-of-type{
+    border-right: black 3px solid;
+}
+   

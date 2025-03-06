@@ -1,0 +1,30 @@
+body{
+    max-width: 500px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center  ;
+}
+.buttons{
+    text-align: center;
+}
+.button1{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 3px;
+    padding: 5px;
+    width: 120px;
+    height: 25px;
+}
+.button2{
+    background-color: white ;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    width: 120px;
+    height: 25px;        
+}

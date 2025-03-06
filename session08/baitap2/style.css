@@ -1,0 +1,50 @@
+
+.contact-form{
+    background-color: #524560;
+    max-width: 600px;
+    max-height: 1000px;
+    padding: 40px;
+    margin: 40px auto;
+}
+label{
+    color: white;
+    font-size: 20px;
+}
+.col-md-55{
+    position: absolute;
+    left: 50%;
+    top: 10.75%;
+  
+}
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+  
+}
+.col-md-55 input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    width: 170%;
+
+}
+.col-md-6 input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    width: 45%;
+}
+.message{
+margin-top: 30px;
+}
+button{
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+}

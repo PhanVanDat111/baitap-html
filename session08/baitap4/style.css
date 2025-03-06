@@ -1,0 +1,49 @@
+.icon{
+    color: orangered;
+    font-size: 20px;
+}
+td{
+    max-width: 300px;
+    padding: 30px;
+    margin-left: 50px;
+    padding-left: 50px;
+   
+}
+.hinhvuong  {
+    width: 50px;
+            height: 50px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+            border-style: ridge ;
+            border-color: black;
+            position: relative;
+            right: 60px;
+            top: 90px;
+            
+}
+.styled-table{
+    padding-left: 100px; 
+}
+.icon{
+    position: relative;
+    right: 71px;
+    top: 45px;
+}
+.icon1{
+    position: relative;
+    right: 74px;
+    top: 42px;  
+    color: orangered;
+    font-size: 20px;
+}
+.styled-table{
+    margin-top: -90px;
+    margin-left: -50px;
+}
+hr{
+    width: 10%; border: 1px solid red; 
+    position: absolute  ;
+}
+h2{
+    margin-bottom: -5px;
+}

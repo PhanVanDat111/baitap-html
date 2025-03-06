@@ -1,0 +1,33 @@
+td{
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    margin-top: 30px;
+    background-color: white;
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 10px;
+}
+img{
+    border-radius: 10px;
+}
+td{
+ border-top: white; 
+ border-bottom: white;  
+ border-right: #e2e6e7;
+}
+table{
+    border-top: white;  
+    border-bottom: white;
+    border-right: white;
+    border-left: white;
+}
+hr{
+position: absolute;
+}
+h2{
+    margin-bottom: -5px;
+}
