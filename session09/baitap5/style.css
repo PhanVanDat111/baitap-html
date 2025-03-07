@@ -15,10 +15,11 @@ div[ class="hcn"] {
     flex-wrap: wrap;
     margin: 10px;
     justify-content: space-evenly;
+
     
 }
-.cackhoang{
+.thecach {
     display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;    
+    justify-content: space-between ;
+    width: 455px;
 }
