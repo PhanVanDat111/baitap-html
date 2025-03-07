@@ -1,0 +1,19 @@
+div[ class="hcn"] {
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 110px;
+    width: 230px;
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-evenly;
+    
+}

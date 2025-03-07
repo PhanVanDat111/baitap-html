@@ -1,0 +1,28 @@
+
+div[ class="hcn"] {
+    background-color: green;
+    height: 30px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hcnl{
+    background-color: green;
+    height: 30px;
+    width: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.box{
+    height: 80px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-evenly;
+    
+}
