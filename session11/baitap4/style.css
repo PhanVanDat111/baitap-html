@@ -1,0 +1,15 @@
+.col{
+    background-color: orange;
+    
+    
+}
+.row{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.col-2{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+}
