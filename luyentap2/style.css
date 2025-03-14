@@ -142,3 +142,6 @@ button {
     position: absolute;
     
 }
+.header{
+    position: fixed;
+}
