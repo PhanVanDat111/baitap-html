@@ -1,4 +1,4 @@
-// var 123name = "John"; // Không hợp lệ: bắt đầu bằng số
+// let 123name = "John"; // Không hợp lệ: bắt đầu bằng số
 // var let = "reserved"; // Không hợp lệ: 'let' là từ khóa của JavaScript
 // // var my-name = "JavaScript"; // Không hợp lệ: chứa dấu gạch ngang '-'
 

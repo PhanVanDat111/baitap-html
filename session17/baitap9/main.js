@@ -10,10 +10,14 @@ document.writeln("delta là :" + delta + "<br>");
 
 // bắt điều kiện khi delta < 0 
 if (delta < 0) {
-    document.writeln("phương trình vô nghiệm")
+
+    document.writeln("phương trình vô nghiệm");
+
 } else {
+
     let x1 = (-b + Math.sqrt(delta)) / (2 * a);
     let x2 = (-b - Math.sqrt(delta)) / (2 * a);
     document.writeln("X1 = " + x1 + "<br>");
     document.writeln("X2 = " + x2);
+    
 }
