@@ -2,23 +2,23 @@ let nhapso = Number(prompt("nhập số (0-9)"));
 
 switch (nhapso) {
     case 0:
-      day = "Sunday";
+      document.writeln("khong");
       break;
     case 1:
-      day = "Monday";
+      document.writeln("mot");
       break;
     case 2:
-       day = "Tuesday";
+      document.writeln("hai");
       break;
     case 3:
-      day = "Wednesday";
+      document.writeln("ba");
       break;
     case 4:
-      day = "Thursday";
+      document.writeln("bon");;
       break;
     case 5:
-      day = "Friday";
+      document.writeln("nam");
       break;
     case 6:
-      day = "Saturday";
+      document.writeln("sau");
   }
