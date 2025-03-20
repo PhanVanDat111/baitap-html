@@ -1,6 +1,6 @@
 let thang = Number(prompt('nhập số tháng :'));
 
-if (thang ===1 || thang ===3|| thang === 5|| thang === 7 || thang === 8|| thang ===10|| thang ===12||) {
+if (thang ===1 || thang ===3|| thang === 5|| thang === 7 || thang === 8|| thang ===10|| thang ===12) {
     document.writeln( 'tháng' + thang + ' có 31 ngày')
 } else if ( thang === 2) {
     document.writeln('tháng' + thang + ' có 28 hoặc 29 ngày nếu như là năm nhuận ')
