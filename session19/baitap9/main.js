@@ -5,4 +5,4 @@
 // let result =  isNaN( “123”); kết quả cho ra sẽ là sai vì  isNaN sẽ cố gắng ép kiểu chuỗi ký tự có phải NaN không vì 123 là Number khồn phải là NaN nên kết quả sai
 // let result = isNaN(“hello”); kết quả đúng vì isNaN hello là không phải là số nên hello là NaN hợp lệ
 // let result = Number.isNaN("123"); Number. isNaN sẽ không cố gắng ép kiểu để kiểm tra nên kết quả là sai
-// let result = Number.isNaN(NaN);Number. isNaN sẽ không cố gắng ép kiểu để kiểm tra nên kết quả là đúngđúng
+// let result = Number.isNaN(NaN);Number. isNaN sẽ không cố gắng ép kiểu để kiểm tra nên kết quả là đúng
