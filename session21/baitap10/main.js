@@ -1,5 +1,4 @@
 let N = Number(prompt('nhập vào một số nguyên bất kì'));
- 
 if (N < 2) {
     document.writeln('vui lòng nhập lại giá trị ')
 } else {
