@@ -1,12 +1,21 @@
 
 
-const words = [1,3,4,5,6,7,8,9]
+let words = [1,2,3,4,5,6,7,8,9];
 
-const result = words.filter((word) => word % 2 !== 0 );
-let chanso = words.filter((word) => word % 2 == 0 );
+function sumchanle(words) {
+    sumle = 0;
+    let sole = words.filter((word) => word % 2 !== 0 );
+for ( let i = 0 ; i < sole.length ; i++){
+    sumle +=sole[i]
+}
+    let chanso = words.filter((word) => word % 2 == 0 );
+    let sumchan = 0;
+    for ( let i = 0 ; i < chanso.length ; i++){
+        sumchan +=chanso[i]}
+
+    return "tong chan = " + sumchan + "tong le = " + sumle
+}
 
 
 
-console.log(result);
-console.log(chanso);
-// Expected output: Array ["exuberant", "destruction", "present"]
+alert(sumchanle(words));
