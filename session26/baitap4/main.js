@@ -1,17 +1,16 @@
-let array = [1,2,3,4,5,6,7,8,9,10];
-function primenumbers (numbers) {
-    if (numbers<2) {
+let array = [1,2,3,4,5,6,7,8,9];
+function primenumer (numbers) {
+    if (Numbers < 2) {
         return false;
     }
-    for ( let i = 2 ; i < numbers ; i++){
-        if (numbers % i == 0) {
+    for (let i = 2 ; i < numbers ; i++){
+        if (numbers % i== 0) {
             return false;
-        }
-     }
-        return true;
- 
+        }     
+    }
+    return true;
 }
-function checkprime (array) {
-    return array.filter((num)=> primenumbers(num));
+function checknumer(array) {
+    return array.filter((num)=primenumer(num));
 }
-alert(checkprime(array))
+ alert(checknumer(array));
