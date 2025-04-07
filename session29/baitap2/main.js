@@ -1,15 +1,5 @@
 
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <script>
         let products = [{
                 id: 1,
                 name: "Cà phê Arabica Đà Lạt",
@@ -128,7 +118,3 @@
         }
 
         main();
-    </script>
-</body>
-
-</html>
