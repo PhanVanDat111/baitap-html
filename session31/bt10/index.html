@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách nhân viên Rikkei</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eee;
+    }
+
+    .pagination button {
+      margin: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .pagination button.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .pagination button:disabled {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <h2>Danh sách nhân viên Rikkei</h2>
+
+  <div>
+    <label>tên nhân viên</label>
+    <input type="text" id="nameInput">
+    <label>chức vụ</label>
+    <input type="text" id="roleInput">
+    <button onclick="addEmployee()">thêm nhân viên</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Chức vụ</th>
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+      <!-- Dữ liệu nhân viên sẽ được chèn ở đây -->
+    </tbody>
+  </table>
+
+  <div class="pagination" id="pagination"></div>
+
+  <script>
+    let employees = [
+      { name: "Nguyễn Văn A", role: "Developer" },
+      { name: "Trần Thị B", role: "Designer" },
+      { name: "Phạm Văn C", role: "Project Manager" },
+      { name: "Lê Thị D", role: "QA Engineer" },
+      { name: "Vũ Văn E", role: "DevOps" },
+      { name: "Hoàng Thị F", role: "HR Manager" },
+      { name: "Đặng Văn G", role: "Tester" },
+      { name: "Bùi Thị H", role: "UI/UX" },
+      { name: "Ngô Văn I", role: "Scrum Master" },
+      { name: "Phan Thị K", role: "Intern" }
+    ];
+
+    const rowsPerPage = 3;
+    let currentPage = 1;
+
+    function renderTable() {
+      const startIndex = (currentPage - 1) * rowsPerPage;
+      const endIndex = startIndex + rowsPerPage;
+
+
+      const paginatedItems = employees.slice(startIndex, endIndex);
+
+
+
+
+
+      const tbody = document.getElementById("employeeTableBody");
+      tbody.innerHTML = "";
+
+      paginatedItems.forEach((emp, index) => {
+        const row = `<tr>
+                      <td>${startIndex + index + 1}</td>
+                      <td>${emp.name}</td>
+                      <td>${emp.role}</td>
+                    </tr>`;
+        tbody.innerHTML += row;
+      });
+
+      renderPagination();
+    }
+
+    function renderPagination() {
+      const totalPages = Math.ceil(employees.length / rowsPerPage);
+      const paginationDiv = document.getElementById("pagination");
+      paginationDiv.innerHTML = "";
+
+      paginationDiv.innerHTML += `<button onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Previous</button>`;
+
+      for (let i = 1; i <= totalPages; i++) {
+        paginationDiv.innerHTML += `<button class="${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+      }
+
+      paginationDiv.innerHTML += `<button onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
+    }
+
+    function changePage(page) {
+      const totalPages = Math.ceil(employees.length / rowsPerPage);
+      if (page >= 1 && page <= totalPages) {
+        currentPage = page;
+        renderTable();
+      }
+    }
+
+    function addEmployee() {
+      const name = document.getElementById("nameInput").value.trim();
+      const role = document.getElementById("roleInput").value.trim();
+
+      if (name && role) {
+        employees.push({ name, role });
+        document.getElementById("nameInput").value = "";
+        document.getElementById("roleInput").value = "";
+
+        // Nếu thêm nhân viên làm tăng số trang, tự chuyển về trang cuối
+        currentPage = Math.ceil(employees.length / rowsPerPage);
+        renderTable();
+      } else {
+        alert("Vui lòng nhập đầy đủ tên và chức vụ.");
+      }
+    }
+
+    renderTable(); // Hiển thị ban đầu
+  </script>
+</body>
+</html>
