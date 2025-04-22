@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>To Do List</h1>
-    
-    <div class="container">
-        <input type="text" id ="congviec" name="congviec" placeholder="Nhập công việc" required>
-        <button id="click">Thêm</button>
+    <div class="box">
+        <h1 id="title" class="title">Nhập Tên Của Bạn</h1>
+        <div class="content">
+            <input type="text" id="name" class="name" placeholder="Nhập tên của bạn">
+            <button id="btn" class="btn">Lưu</button>
+        </div>
     </div>
-    <!-- danh sách công việc -->
-    <ul id="list"></ul> 
-    
     <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách nhân viên</title>
+  <style>
+    body,
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+
+    }
+
+    .input {
+        display: flex;
+    }
+    input{
+        width: 230px;
+    }
+
+    .name,.position {
+        border: 1px solid rgba(191, 191, 191, 0.559);
+        padding: 10px;
+        width: 350px;
+    }
+    #name, #position {
+        border-radius: 2px;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #999;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #eee;
+    }
+
+    ul.pagination {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      gap: 5px;
+    }
+
+    .page-item a {
+      padding: 5px 10px;
+      text-decoration: none;
+      border: 1px solid #007BFF;
+      border-radius: 4px;
+      color: #007BFF;
+    }
+
+    .page-item.active a {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .page-item.disabled a {
+
+      pointer-events: none;
+    }
+    .page-item.disabled {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+  </style>
+</head>
+
+<body>
+  <form action="#" method="post">
+    <h1>Danh sách nhân viên Rikkei</h1>
+    <div class="input">
+      <div class="name">
+        <label for="name">Tên nhân viên</label>
+        <input type="text" id="name">
+      </div>
+      <div class="position">  
+        <label for="position">Chức vụ</label>
+        <input type="text" id="position">
+      </div>
+    </div>
+    <button type="submit" id="addEmp">Thêm nhân viên</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Chức vụ</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <ul id="list-pagination" class="pagination"></ul>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container căn giữa */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Font giống hình */
+}
+
+/* Tiêu đề */
+#title {
+    font-size: 24px; /* Font nhỏ hơn một chút so với 30px để giống hình */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Form và các trường nhập liệu */
+form {
+    display: flex;
+    flex-direction: row; /* Đặt các trường nằm ngang giống hình */
+    gap: 15px; /* Khoảng cách giữa các trường */
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+label {
+    display: none; /* Ẩn label vì trong hình sử dụng placeholder */
+}
+
+input {
+    padding: 5px 10px; /* Padding nhỏ hơn để giống kích thước trong hình */
+    border: 1px solid #000; /* Viền đen giống hình */
+    border-radius: 0; /* Không bo góc */
+    width: 150px; /* Chiều rộng nhỏ hơn để giống hình */
+    font-size: 14px;
+    background: none; /* Không có nền */
+}
+
+input:focus {
+    outline: none;
+    border-color: #000; /* Giữ viền đen khi focus */
+}
+
+/* Nút Thêm nhân viên */
+button#click {
+    display: block;
+    margin: 0 auto; /* Căn giữa nút */
+    padding: 5px 10px; /* Padding nhỏ để giống hình */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+button#click:hover {
+    background-color: #0056b3;
+}
+
+/* Bảng */
+table {
+    width: 520px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #000; /* Viền đen giống hình */
+}
+
+th, td {
+    padding: 5px 10px; /* Padding nhỏ hơn để giống hình */
+    text-align: center;
+    border: 1px solid #000; /* Viền đen cho các ô */
+}
+
+th {
+    background-color: #e6e6e6; /* Nền xám nhạt giống hình (nhẹ hơn #f2f2f2) */
+    font-weight: bold;
+}
+
+td {
+    color: #000;
+}
+
+/* Phân trang */
+ul.thephantrang {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    gap: 5px; /* Khoảng cách nhỏ hơn để giống hình */
+    justify-content: center;
+}
+
+.page-item a {
+    display: inline-block;
+    padding: 5px 10px; /* Padding nhỏ hơn để giống hình */
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    color: #007BFF;
+    font-size: 14px;
+    background-color: #fff; /* Nền trắng giống hình */
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.page-item.active a {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+.page-item.disabled a {
+    color: #007BFF; /* Màu xanh nhạt giống hình */
+    border-color: #007BFF;
+    background-color: #fff;
+    cursor: not-allowed;
+}
+
+.page-item.disabled {
+    opacity: 0.3; /* Mờ hơn để giống hình */
+    pointer-events: none;
+}
+
+.page-item a:hover:not(.disabled a) {
+    background-color: #e9ecef;
+    color: #0056b3;
+}

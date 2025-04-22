@@ -7,12 +7,21 @@ btn.addEventListener("click", (e) => {
     let name = document.getElementById("tennhanvien").value;
     let chucvu = document.getElementById("chucvu").value;
   
-    const row = document.createElement("tr");
-    row.innerHTML = `
-        <td>${stt++}</td>
-        <td>${name}</td>
-        <td>${chucvu}</td>           
+    // const row = document.createElement("tr");
+    // row.innerHTML = `
+    //     <td>${stt++}</td>
+    //     <td>${name}</td>
+    //     <td>${chucvu}</td>           
+    // `;
+    // tbody.appendChild(row);
+
+    tbody.innerHTML += `
+        <tr>
+            <td>${stt++}</td>
+            <td>${name}</td>
+            <td>${chucvu}</td>           
+        </tr>
     `;
-    tbody.appendChild(row);
+
 });
 

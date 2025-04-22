@@ -1,0 +1,12 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn{
+    background-color: #007bff;
+    color: white;
+    border: solid 2px #007bff;
+    border-radius: 5px;
+}
